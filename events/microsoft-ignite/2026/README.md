@@ -1,6 +1,6 @@
 # Microsoft Ignite 2026
 
-A cinematic, offline-ready interactive keynote for the Microsoft Ignite 2026 Book of News. It provides source-linked announcements, keyboard-driven presentation scenes, presenter notes, and a searchable explore view.
+A cinematic, offline-ready interactive keynote and playable arcade game for the Microsoft Ignite 2026 Book of News. They provide source-linked announcements, learning moments, presenter scenes and a searchable explore view.
 
 The production route is:
 
@@ -10,9 +10,12 @@ events/microsoft-ignite/2026/
 
 ## Included experience
 
+- Signal Sprint, a replayable three-lane arcade game
 - Curated cinematic highlights
 - Complete section and announcement path
 - Searchable announcement explorer
+- Catch-to-learn announcement cards
+- Missed news cards that retry until captured
 - Source links and availability labels
 - Deterministic, clearly labeled illustrative demos
 - Separate presenter window with notes and timing
@@ -21,6 +24,7 @@ events/microsoft-ignite/2026/
 
 - `index.html`: static event entry point
 - `experiences/keynote/`: presentation UI, styles, and embedded interactions
+- `games/signal-sprint/`: the offline browser arcade experience
 - `data/announcements.json`: structured source inventory
 - `assets/icons/`: product-section icon marks
 - `content/`: future recaps and presentation writing

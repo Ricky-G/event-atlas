@@ -24,7 +24,7 @@ The first collection includes Microsoft Ignite, with space for GitHub Universe, 
 
 | Event | Year | Status | Experience |
 | --- | ---: | --- | --- |
-| Microsoft Ignite | 2026 | Published | Keynote and announcement explorer |
+| Microsoft Ignite | 2026 | Published | Signal Sprint game and keynote companion |
 | GitHub Universe | 2026 | Planned | Event experience |
 | Microsoft Build | 2027 | Planned | Announcements, demos, and games |
 

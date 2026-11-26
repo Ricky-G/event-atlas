@@ -10,6 +10,9 @@ const announcementIds = new Set()
 const missing = []
 const invalidLinks = []
 const dashCopy = []
+const missingFeatures = []
+const missingWorldCoverage = []
+const missingBossMappings = []
 
 for (const announcement of data.announcements) {
   if (announcementIds.has(announcement.id)) {
@@ -27,6 +30,10 @@ for (const announcement of data.announcements) {
 
   if (!announcement.availability?.length) {
     missing.push(`Missing availability: ${announcement.id}`)
+  }
+
+  if (!Array.isArray(announcement.features) || !announcement.features.length) {
+    missingFeatures.push(announcement.id)
   }
 
   if (!announcement.officialLink?.startsWith('https://')) {
@@ -48,8 +55,21 @@ for (const metric of data.metrics || []) {
   }
 }
 
-if (missing.length || invalidLinks.length || dashCopy.length) {
-  console.error(JSON.stringify({ missing, invalidLinks, dashCopy }, null, 2))
+for (const section of data.sections) {
+  if (!data.announcements.some(announcement => announcement.sectionId === section.id)) {
+    missingWorldCoverage.push(section.id)
+  }
+  if (!section.bossId) {
+    missingBossMappings.push(`${section.id}: missing bossId`)
+  } else if (!data.announcements.some(announcement =>
+    announcement.sectionId === section.id && announcement.id === section.bossId
+  )) {
+    missingBossMappings.push(`${section.id}: unknown boss ${section.bossId}`)
+  }
+}
+
+if (missing.length || invalidLinks.length || dashCopy.length || missingFeatures.length || missingWorldCoverage.length || missingBossMappings.length) {
+  console.error(JSON.stringify({ missing, invalidLinks, dashCopy, missingFeatures, missingWorldCoverage, missingBossMappings }, null, 2))
   process.exit(1)
 }
 

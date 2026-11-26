@@ -12,7 +12,8 @@
       "name": "Azure",
       "kicker": "Chip to agent",
       "summary": "Infrastructure, resilience and operating systems for the agentic AI era.",
-      "accent": "#7ea7ff"
+      "accent": "#7ea7ff",
+      "bossId": "cobalt-200"
     },
     {
       "id": "data",
@@ -20,7 +21,8 @@
       "name": "Data",
       "kicker": "Operational intelligence",
       "summary": "Databases and analytics that keep applications, models and agents grounded.",
-      "accent": "#55d6be"
+      "accent": "#55d6be",
+      "bossId": "horizondb"
     },
     {
       "id": "foundry",
@@ -28,7 +30,8 @@
       "name": "Microsoft Foundry",
       "kicker": "Build and improve",
       "summary": "Models, evaluations, training and a continuous improvement loop.",
-      "accent": "#bd94ff"
+      "accent": "#bd94ff",
+      "bossId": "foundry-continuous"
     },
     {
       "id": "github",
@@ -36,7 +39,8 @@
       "name": "GitHub",
       "kicker": "Developer agents",
       "summary": "A production harness for secure, scalable agent experiences.",
-      "accent": "#f0a6ca"
+      "accent": "#f0a6ca",
+      "bossId": "copilot-sdk"
     },
     {
       "id": "copilot",
@@ -44,7 +48,8 @@
       "name": "Microsoft Copilot",
       "kicker": "Work in motion",
       "summary": "A connected Copilot experience for chat, delegation, apps and personal productivity.",
-      "accent": "#ffbe76"
+      "accent": "#ffbe76",
+      "bossId": "copilot-home"
     },
     {
       "id": "iq",
@@ -52,7 +57,8 @@
       "name": "Microsoft IQ",
       "kicker": "Enterprise context",
       "summary": "Work, business data, knowledge and real-world information for governed AI.",
-      "accent": "#69c8ff"
+      "accent": "#69c8ff",
+      "bossId": "microsoft-iq"
     },
     {
       "id": "security",
@@ -60,7 +66,8 @@
       "name": "Security",
       "kicker": "Trust at speed",
       "summary": "Identity, endpoint, data and SOC controls for agents in production.",
-      "accent": "#ff7d86"
+      "accent": "#ff7d86",
+      "bossId": "perception"
     },
     {
       "id": "edge",
@@ -68,7 +75,8 @@
       "name": "Microsoft Edge",
       "kicker": "The governed browser",
       "summary": "Managed AI workflows and enterprise browser controls.",
-      "accent": "#58a6ff"
+      "accent": "#58a6ff",
+      "bossId": "edge-governance"
     },
     {
       "id": "windows",
@@ -76,7 +84,8 @@
       "name": "Windows",
       "kicker": "The agent workspace",
       "summary": "Local, cloud and server execution with tighter isolation and management.",
-      "accent": "#87dbff"
+      "accent": "#87dbff",
+      "bossId": "windows-process-containers"
     }
   ],
   "metrics": [

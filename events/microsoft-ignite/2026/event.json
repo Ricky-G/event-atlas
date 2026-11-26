@@ -7,7 +7,7 @@
   "year": 2026,
   "status": "published",
   "route": "microsoft-ignite/2026",
-  "description": "A cinematic, offline-ready keynote companion and source-linked announcement explorer for Microsoft Ignite 2026.",
+  "description": "A playable, offline-ready arcade game and source-linked announcement archive for Microsoft Ignite 2026.",
   "dates": {
     "start": "2026-11-17",
     "end": "2026-11-20",
@@ -17,8 +17,8 @@
   "website": "https://ignite.microsoft.com/",
   "accent": "#7ea7ff",
   "experience": {
-    "path": "index.html",
-    "label": "Launch keynote experience"
+    "path": "games/signal-sprint/index.html",
+    "label": "Play Signal Sprint"
   },
   "featured": true,
   "sources": [
