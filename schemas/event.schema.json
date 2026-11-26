@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ricky-g.github.io/event-atlas/schemas/event.schema.json",
+  "$id": "https://clouddev.blog/event-atlas/schemas/event.schema.json",
   "title": "Event Atlas event metadata",
   "type": "object",
   "additionalProperties": false,

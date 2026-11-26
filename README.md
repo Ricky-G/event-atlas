@@ -8,8 +8,8 @@ The first collection includes Microsoft Ignite, with space for GitHub Universe, 
 
 ## Live experiences
 
-- [Event Atlas](https://ricky-g.github.io/event-atlas/)
-- [Microsoft Ignite 2026](https://ricky-g.github.io/event-atlas/events/microsoft-ignite/2026/)
+- [Event Atlas](https://clouddev.blog/event-atlas/)
+- [Microsoft Ignite 2026](https://clouddev.blog/event-atlas/events/microsoft-ignite/2026/)
 - [clouddev.blog](https://clouddev.blog/) is the editorial front door for the project.
 
 ## What lives here
@@ -62,8 +62,8 @@ event-atlas/
 The path convention is `events/<event-series>/<year>/`. Published URLs preserve that same route:
 
 ```text
-https://ricky-g.github.io/event-atlas/events/microsoft-ignite/2026/
-https://ricky-g.github.io/event-atlas/events/github-universe/2026/
+https://clouddev.blog/event-atlas/events/microsoft-ignite/2026/
+https://clouddev.blog/event-atlas/events/github-universe/2026/
 ```
 
 ## Principles
