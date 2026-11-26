@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/event.schema.json",
+  "slug": "microsoft-build-2027",
+  "series": "microsoft-build",
+  "name": "Microsoft Build 2027",
+  "organizer": "Microsoft",
+  "year": 2027,
+  "status": "planned",
+  "route": "microsoft-build/2027",
+  "description": "A planned interactive archive for Microsoft Build announcements, developer demos, and hands-on learning games.",
+  "dates": null,
+  "location": null,
+  "website": "https://build.microsoft.com/",
+  "accent": "#55d6be",
+  "experience": null,
+  "featured": false,
+  "sources": [
+    "https://build.microsoft.com/"
+  ],
+  "updatedAt": "2026-11-27"
+}

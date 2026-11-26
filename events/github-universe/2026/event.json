@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/event.schema.json",
+  "slug": "github-universe-2026",
+  "series": "github-universe",
+  "name": "GitHub Universe 2026",
+  "organizer": "GitHub",
+  "year": 2026,
+  "status": "planned",
+  "route": "github-universe/2026",
+  "description": "A future interactive archive for GitHub Universe announcements, developer stories, demos, and games.",
+  "dates": null,
+  "location": null,
+  "website": "https://githubuniverse.com/",
+  "accent": "#f26eaa",
+  "experience": null,
+  "featured": false,
+  "sources": [
+    "https://githubuniverse.com/"
+  ],
+  "updatedAt": "2026-11-27"
+}

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ricky-g.github.io/event-atlas/schemas/event.schema.json",
+  "title": "Event Atlas event metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "series",
+    "name",
+    "organizer",
+    "year",
+    "status",
+    "route",
+    "description",
+    "accent",
+    "featured",
+    "sources",
+    "updatedAt"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "series": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organizer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2000,
+      "maximum": 2100
+    },
+    "status": {
+      "type": "string",
+      "enum": ["planned", "in-progress", "published", "archived"]
+    },
+    "route": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+/[0-9]{4}$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["start", "end", "display"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        },
+        "display": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "location": {
+      "type": ["string", "null"]
+    },
+    "website": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "accent": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "experience": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["path", "label"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^\\\\]+$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "sources": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "published"
+          }
+        },
+        "required": ["status"]
+      },
+      "then": {
+        "required": ["dates", "experience"],
+        "properties": {
+          "dates": {
+            "type": "object"
+          },
+          "experience": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  ]
+}

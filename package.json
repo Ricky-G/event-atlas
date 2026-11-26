@@ -1,0 +1,19 @@
+{
+  "name": "event-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive event experiences, source-linked stories, demos, games, and living archives.",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview-server.mjs",
+    "validate": "node scripts/validate-events.mjs && node events/microsoft-ignite/2026/scripts/check-inventory.mjs",
+    "check": "node scripts/validate-events.mjs && node events/microsoft-ignite/2026/scripts/check-inventory.mjs && node scripts/build.mjs",
+    "event": "node scripts/create-event.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

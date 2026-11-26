@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schemas/event.schema.json",
+  "slug": "microsoft-ignite-2026",
+  "series": "microsoft-ignite",
+  "name": "Microsoft Ignite 2026",
+  "organizer": "Microsoft",
+  "year": 2026,
+  "status": "published",
+  "route": "microsoft-ignite/2026",
+  "description": "A cinematic, offline-ready keynote companion and source-linked announcement explorer for Microsoft Ignite 2026.",
+  "dates": {
+    "start": "2026-11-17",
+    "end": "2026-11-20",
+    "display": "November 17-20, 2026"
+  },
+  "location": "San Francisco and online",
+  "website": "https://ignite.microsoft.com/",
+  "accent": "#7ea7ff",
+  "experience": {
+    "path": "index.html",
+    "label": "Launch keynote experience"
+  },
+  "featured": true,
+  "sources": [
+    "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+  ],
+  "updatedAt": "2026-11-27"
+}

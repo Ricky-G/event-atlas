@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/event.schema.json",
+  "slug": "example-event-2026",
+  "series": "example-event",
+  "name": "Example Event",
+  "organizer": "Event organizer",
+  "year": 2026,
+  "status": "planned",
+  "route": "example-event/2026",
+  "description": "A planned Event Atlas collection for this event year.",
+  "dates": null,
+  "location": null,
+  "website": null,
+  "accent": "#7ea7ff",
+  "experience": null,
+  "featured": false,
+  "sources": [],
+  "updatedAt": "2026-01-01"
+}

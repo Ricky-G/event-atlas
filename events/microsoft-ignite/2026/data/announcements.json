@@ -1,0 +1,1358 @@
+{
+  "source": {
+    "title": "Microsoft Ignite 2026 Book of News",
+    "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+    "event": "November 17-20, 2026",
+    "location": "San Francisco and online"
+  },
+  "sections": [
+    {
+      "id": "azure",
+      "number": "01",
+      "name": "Azure",
+      "kicker": "Chip to agent",
+      "summary": "Infrastructure, resilience and operating systems for the agentic AI era.",
+      "accent": "#7ea7ff"
+    },
+    {
+      "id": "data",
+      "number": "02",
+      "name": "Data",
+      "kicker": "Operational intelligence",
+      "summary": "Databases and analytics that keep applications, models and agents grounded.",
+      "accent": "#55d6be"
+    },
+    {
+      "id": "foundry",
+      "number": "03",
+      "name": "Microsoft Foundry",
+      "kicker": "Build and improve",
+      "summary": "Models, evaluations, training and a continuous improvement loop.",
+      "accent": "#bd94ff"
+    },
+    {
+      "id": "github",
+      "number": "04",
+      "name": "GitHub",
+      "kicker": "Developer agents",
+      "summary": "A production harness for secure, scalable agent experiences.",
+      "accent": "#f0a6ca"
+    },
+    {
+      "id": "copilot",
+      "number": "05",
+      "name": "Microsoft Copilot",
+      "kicker": "Work in motion",
+      "summary": "A connected Copilot experience for chat, delegation, apps and personal productivity.",
+      "accent": "#ffbe76"
+    },
+    {
+      "id": "iq",
+      "number": "06",
+      "name": "Microsoft IQ",
+      "kicker": "Enterprise context",
+      "summary": "Work, business data, knowledge and real-world information for governed AI.",
+      "accent": "#69c8ff"
+    },
+    {
+      "id": "security",
+      "number": "07",
+      "name": "Security",
+      "kicker": "Trust at speed",
+      "summary": "Identity, endpoint, data and SOC controls for agents in production.",
+      "accent": "#ff7d86"
+    },
+    {
+      "id": "edge",
+      "number": "08",
+      "name": "Microsoft Edge",
+      "kicker": "The governed browser",
+      "summary": "Managed AI workflows and enterprise browser controls.",
+      "accent": "#58a6ff"
+    },
+    {
+      "id": "windows",
+      "number": "09",
+      "name": "Windows",
+      "kicker": "The agent workspace",
+      "summary": "Local, cloud and server execution with tighter isolation and management.",
+      "accent": "#87dbff"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "cobalt-50",
+      "value": "50%",
+      "label": "better CPU performance",
+      "context": "Cobalt 200 versus Cobalt 100",
+      "sourceLink": "https://aka.ms/Cobalt200VMs-GA"
+    },
+    {
+      "id": "rayfin-100k",
+      "value": "100,000+",
+      "label": "apps created with Rayfin",
+      "context": "Since its preview launch",
+      "sourceLink": "https://aka.ms/FabricApps-Ignite26"
+    },
+    {
+      "id": "mdash-100",
+      "value": "100+",
+      "label": "specialized AI agents",
+      "context": "In the Codename MDASH security pipeline",
+      "sourceLink": "https://aka.ms/perceptionignite"
+    },
+    {
+      "id": "perception-80",
+      "value": "About 80%",
+      "label": "of alerts",
+      "context": "Covered by the Triage Agent in a typical Defender queue",
+      "sourceLink": "https://aka.ms/perceptionignite"
+    },
+    {
+      "id": "webiq-207",
+      "value": "207.5M",
+      "label": "real-world entities",
+      "context": "Available through Web IQ Places",
+      "sourceLink": "https://aka.ms/webiqnews"
+    },
+    {
+      "id": "webiq-40b",
+      "value": "40B+",
+      "label": "shopping listings",
+      "context": "Available in Web IQ Commerce private preview",
+      "sourceLink": "https://aka.ms/webiqnews"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "azure-chaos",
+      "sectionId": "azure",
+      "subsection": "Brand, infra and silicon",
+      "name": "Azure Chaos Studio Workspaces and AKS extension",
+      "summary": "Organize resilience tests and bring controlled disruption testing to AKS.",
+      "problem": "Teams need repeatable ways to test whether applications recover from realistic failures.",
+      "how": "Workspaces organize reusable disruption scenarios. The AKS extension adds controlled pod experiments with fewer permissions.",
+      "benefit": "Validate recovery before a real outage exposes the weakness.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/chaosstudio/workspaces-ga",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Reusable Azure Chaos Studio Workspaces", "availability": "Generally available"},
+        {"name": "Azure Chaos Studio extension for AKS", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "azure-confidential",
+      "sectionId": "azure",
+      "subsection": "Brand, infra and silicon",
+      "name": "Confidential computing expands across Azure",
+      "summary": "Protect sensitive data while models and applications process it.",
+      "problem": "Organizations need stronger controls for AI data, collaboration and model processing.",
+      "how": "Azure adds preview options for confidential multi-GPU computing, smaller trusted environments and multiparty clean rooms.",
+      "benefit": "Unlock high-value data collaboration without exposing raw information beyond intended participants.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/acc-ignite2026",
+      "hero": true,
+      "demo": "confidential",
+      "features": [
+        {"name": "VR72 confidential multi-GPU computing", "availability": "Public preview"},
+        {"name": "Azure Confidential Enclaves", "availability": "Public preview"},
+        {"name": "AKS Kata CoCo confidential containers", "availability": "Public preview"},
+        {"name": "Azure Confidential Clean Room", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "cobalt-200",
+      "sectionId": "azure",
+      "subsection": "Brand, infra and silicon",
+      "name": "Azure Cobalt 200 virtual machines",
+      "summary": "Arm-based VMs add CPU performance for agent and general-purpose workloads.",
+      "problem": "AI agents spend work outside the model on CPUs, temporary workspaces and supporting services.",
+      "how": "Cobalt 200 is available with consistent or boost speed modes and two new VM families for memory or storage-heavy work.",
+      "benefit": "Up to 50% better CPU performance than Cobalt 100, while giving teams consistent or peak-speed choices.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/Cobalt200VMs-GA",
+      "hero": true,
+      "demo": "cobalt",
+      "features": [
+        {"name": "Cobalt 200 consistent-speed mode", "availability": "Generally available"},
+        {"name": "Cobalt 200 boost mode", "availability": "Generally available"},
+        {"name": "Mpsv4 memory-optimized virtual machines", "availability": "Generally available"},
+        {"name": "Lpsv5 storage-heavy virtual machines", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "azure-agentic-ops",
+      "sectionId": "azure",
+      "subsection": "Core",
+      "name": "Agentic operations across Azure",
+      "summary": "Bring richer context and governed AI operations into Azure monitoring and response.",
+      "problem": "Operations teams need faster investigation, consistent policy and shared context across Azure services.",
+      "how": "Azure Monitor health models provide live dependency context. Copilot spaces, custom skills and SRE Agent capabilities extend operational agents.",
+      "benefit": "Move from investigating isolated telemetry to governed, human-controlled agent workflows.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite2026/agenticops",
+      "hero": true,
+      "demo": "agent-grid",
+      "features": [
+        {"name": "Natural language workload planning in Azure Monitor", "availability": "Generally available"},
+        {"name": "Azure Monitor health models", "availability": "Generally available"},
+        {"name": "Azure Copilot spaces and custom skills", "availability": "Public preview"},
+        {"name": "Azure Workload Center for Oracle and SAP", "availability": "Public preview"},
+        {"name": "Azure SRE Agent enterprise capabilities", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "azure-ai-infrastructure",
+      "sectionId": "azure",
+      "subsection": "Core",
+      "name": "Azure AI infrastructure foundation",
+      "summary": "Secure networking, isolation and hybrid AKS for production AI applications.",
+      "problem": "Production agents need a foundation that spans models, networking, compute, storage and infrastructure policy.",
+      "how": "Microsoft Foundry models and agents can extend to customer AKS clusters. Agent Grid, Agent Sandbox and Flex nodes add control.",
+      "benefit": "Keep the Foundry workflow from experimentation to production while preserving Kubernetes flexibility.",
+      "availability": ["Public preview", "Generally available"],
+      "availabilityKind": ["preview", "ga"],
+      "officialLink": "https://aka.ms/ai-infra-ignite26",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Foundry deployment to customer AKS clusters", "availability": "Public preview"},
+        {"name": "Agent Grid", "availability": "Public preview"},
+        {"name": "Agent Sandbox extension for AKS", "availability": "Public preview"},
+        {"name": "Flex nodes for AKS", "availability": "Public preview"},
+        {"name": "Azure Cobalt 200 virtual machines", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "azure-catalyst",
+      "sectionId": "azure",
+      "subsection": "Core",
+      "name": "Azure Catalyst",
+      "summary": "A unified experience for AI-powered discovery, planning, migration and modernization.",
+      "problem": "Modernization spans estate discovery, planning, migration and execution across Azure and GitHub.",
+      "how": "Azure Catalyst connects estate insights with agent-assisted execution in Azure Copilot and GitHub Copilot.",
+      "benefit": "Reduce manual work and carry modernization context across applications, databases, storage and networking.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/modernization-ignite26",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Azure Catalyst agent", "availability": "Generally available"},
+        {"name": "Deeper estate, application and cost insights", "availability": "Public preview"},
+        {"name": "GitHub Copilot modernization rulebooks", "availability": "Generally available"},
+        {"name": "Bring-your-own-model support", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "windows-server-2028",
+      "sectionId": "azure",
+      "subsection": "Core",
+      "name": "Windows Server 2028",
+      "summary": "A preview foundation for stronger security, storage performance and hybrid AI inference.",
+      "problem": "Enterprises need current Windows infrastructure to support secure hybrid AI workloads.",
+      "how": "The preview adds hardened security, NVMe options, unified management integrations and enterprise AI runtimes.",
+      "benefit": "Run AI closer to critical applications and data while extending existing Windows investments.",
+      "availability": ["Public preview", "Early access"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/WindowsServer2028Announcement",
+      "hero": false,
+      "demo": "windows-agent",
+      "features": [
+        {"name": "Hardened Server Core and security baseline", "availability": "Public preview"},
+        {"name": "Post-quantum cryptography and certificate automation", "availability": "Public preview"},
+        {"name": "NVMe over Fabrics and native NVMe storage", "availability": "Public preview"},
+        {"name": "Hybrid AI runtimes and Agent 365 integration", "availability": "Early access"}
+      ]
+    },
+    {
+      "id": "cosmos-db",
+      "sectionId": "data",
+      "subsection": "Azure Cosmos DB",
+      "name": "Azure Cosmos DB lifecycle updates",
+      "summary": "Improve retrieval, application design and backup protection in Azure Cosmos DB.",
+      "problem": "Teams need better search relevance, developer tooling and independent production recovery.",
+      "how": "Cosmos DB adds retrieval, VS Code, Rust, backup and modeling capabilities.",
+      "benefit": "Improve one application lifecycle from design through search and recovery.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite26/cosmosdb",
+      "hero": true,
+      "demo": "cosmos",
+      "features": [
+        {"name": "Cosmos DB Shell", "availability": "Generally available"},
+        {"name": "AI-assisted data modeler", "availability": "Public preview"},
+        {"name": "Rust SDK", "availability": "Generally available"},
+        {"name": "Semantic reranker", "availability": "Generally available"},
+        {"name": "FuzzyBM25 score projection", "availability": "Generally available"},
+        {"name": "Vault-based Azure Backup", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "documentdb",
+      "sectionId": "data",
+      "subsection": "Azure DocumentDB",
+      "name": "Azure DocumentDB expands hybrid and developer options",
+      "summary": "Provision, develop and govern MongoDB-compatible workloads across Azure and local environments.",
+      "problem": "Document databases need faster development, hybrid deployment and finer access control.",
+      "how": "DocumentDB adds VS Code tooling, near-instant provisioning, Arc and Azure Local options and database-level roles.",
+      "benefit": "Give teams more placement and least-privilege choices while preserving MongoDB compatibility.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite26/documentdb",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Visual Studio Code extension", "availability": "Generally available"},
+        {"name": "Near-instant M10 to M30 provisioning", "availability": "Generally available"},
+        {"name": "DocumentDB enabled by Azure Arc", "availability": "Public preview"},
+        {"name": "DocumentDB on Azure Local", "availability": "Public preview"},
+        {"name": "Database and collection role-based access", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "horizondb",
+      "sectionId": "data",
+      "subsection": "Azure HorizonDB",
+      "name": "Azure HorizonDB",
+      "summary": "A managed PostgreSQL-compatible database for mission-critical and AI applications.",
+      "problem": "Developers need transactional data, enterprise resilience and AI capabilities in one managed service.",
+      "how": "HorizonDB combines vector search, AI model management, private networking, encryption and multi-zone resilience.",
+      "benefit": "Build intelligent applications on trusted transactional data with familiar PostgreSQL tooling.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite26/horizondb",
+      "hero": true,
+      "demo": "horizondb",
+      "features": [
+        {"name": "Managed PostgreSQL-compatible service", "availability": "Generally available"},
+        {"name": "Built-in vector search", "availability": "Generally available"},
+        {"name": "Built-in AI model management", "availability": "Public preview"},
+        {"name": "AI Functions", "availability": "Public preview"},
+        {"name": "AI Pipelines", "availability": "Public preview"},
+        {"name": "PostgreSQL VS Code integration", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "managed-redis",
+      "sectionId": "data",
+      "subsection": "Azure Managed Redis",
+      "name": "Redis 8 and an agent kit",
+      "summary": "Unify Redis data types and bring Azure guidance into AI-assisted development.",
+      "problem": "Modern applications need cache, memory, search and vector context without separate data patterns.",
+      "how": "Redis 8 combines supported data types in one Azure Managed Redis version and adds an agent kit for configuration guidance.",
+      "benefit": "Simplify application data capabilities and catch reliability or network concerns earlier.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/ignite26/AMR",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Redis 8 in Azure Managed Redis", "availability": "Public preview"},
+        {"name": "Azure Managed Redis agent kit", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "azure-sql",
+      "sectionId": "data",
+      "subsection": "Azure SQL",
+      "name": "Azure SQL modernization and local development",
+      "summary": "Improve resiliency, resource flexibility, migration and local SQL testing.",
+      "problem": "SQL Server and Azure SQL teams need continuity across migration, disaster recovery and local development.",
+      "how": "Azure SQL adds zone redundancy, flexible memory, multi-database links and a local SQL Database engine container.",
+      "benefit": "Modernize more workloads while testing in a local, subscription-free environment.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite26/mssql",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Zone redundancy", "availability": "Generally available"},
+        {"name": "Flexible memory", "availability": "Generally available"},
+        {"name": "Multi-database availability group links", "availability": "Generally available"},
+        {"name": "Azure SQL Database container", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "database-hub",
+      "sectionId": "data",
+      "subsection": "Database Hub in Fabric",
+      "name": "Database Hub and database agents",
+      "summary": "Discover, monitor and manage databases with AI-assisted SQL and PostgreSQL operations.",
+      "problem": "Database teams manage estates across Azure, Fabric, on-premises and other clouds.",
+      "how": "Database Hub provides one management view. Preview agents observe engine signals and recommend or carry out approved actions.",
+      "benefit": "Reduce operational complexity and keep human approval boundaries and permissions intact.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite26/databases",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Database Hub in Fabric", "availability": "Generally available"},
+        {"name": "Database agent in Database Hub", "availability": "Public preview"},
+        {"name": "Database agent in PostgreSQL VS Code extension", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "fabric-horizondb",
+      "sectionId": "data",
+      "subsection": "Microsoft Fabric HorizonDB",
+      "name": "Fabric HorizonDB",
+      "summary": "Bring serverless PostgreSQL directly into Microsoft Fabric.",
+      "problem": "Apps and agents need short-lived, bursty databases and a managed backend for Fabric apps.",
+      "how": "Fabric HorizonDB adds serverless databases, mirroring, translytical queries and reverse ETL across Fabric.",
+      "benefit": "Provision quickly, pause when idle and connect operational data with analytics.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/AAncdv4",
+      "hero": true,
+      "demo": "horizondb",
+      "features": [
+        {"name": "Serverless PostgreSQL databases", "availability": "Public preview"},
+        {"name": "Managed Fabric app backend", "availability": "Public preview"},
+        {"name": "Translytical queries", "availability": "Public preview"},
+        {"name": "Table mirroring", "availability": "Public preview"},
+        {"name": "Reverse ETL", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "postgres-azure",
+      "sectionId": "data",
+      "subsection": "PostgreSQL on Azure",
+      "name": "PostgreSQL migration and modernization on Azure",
+      "summary": "Simplify Oracle and PostgreSQL migration with more scale and protection options.",
+      "problem": "Teams need a first-party path from discovery and conversion through managed migration.",
+      "how": "Azure combines assessment and conversion in VS Code with preview migration service support, flexible compute and backup.",
+      "benefit": "Modernize PostgreSQL workloads with more compute, resilience and backup choices.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/Ignite26/Postgres_on_Azure",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Oracle-to-PostgreSQL migration support", "availability": "Public preview"},
+        {"name": "Azure HorizonDB migration support", "availability": "Public preview"},
+        {"name": "Burstable v2 compute", "availability": "Public preview"},
+        {"name": "Cobalt 200 for Azure Database for PostgreSQL", "availability": "Generally available"},
+        {"name": "Confidential compute and restore immutability", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "power-bi-apps",
+      "sectionId": "data",
+      "subsection": "Power BI",
+      "name": "Custom data apps in Power BI",
+      "summary": "Create purpose-built data apps with natural language in Power BI Desktop.",
+      "problem": "Report viewers need to enter, update and act on governed business data without switching tools.",
+      "how": "Power BI Pro customers can start with a trusted semantic model and describe an app in natural language.",
+      "benefit": "Move from viewing insights to interactive workflows that write back to trusted data.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/microsoft-fabric-is-fueling-frontier-transformation/5422989",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Natural-language app creation", "availability": "Public preview"},
+        {"name": "Trusted Power BI semantic model", "availability": "Public preview"},
+        {"name": "Fabric database capabilities", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "rayfin-fabric-apps",
+      "sectionId": "data",
+      "subsection": "Rayfin and Fabric apps",
+      "name": "Rayfin and Fabric apps",
+      "summary": "A generally available application backend for developers and agents.",
+      "problem": "Building an app quickly still requires databases, authentication, hosting and trusted business context.",
+      "how": "Rayfin brings SQL or HorizonDB, semantic models, security, governance and observability to Fabric.",
+      "benefit": "Build complete governed applications and make trusted analytics interactive.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/FabricApps-Ignite26",
+      "hero": true,
+      "demo": "fabric-app",
+      "features": [
+        {"name": "Rayfin application backend", "availability": "Generally available"},
+        {"name": "Centralized app governance", "availability": "Generally available"},
+        {"name": "Fabric apps with Copilot", "availability": "Generally available"},
+        {"name": "Power BI and Fabric app integration", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "foundry-continuous",
+      "sectionId": "foundry",
+      "subsection": "Continuous improvement",
+      "name": "Continuous improvement in Microsoft Foundry",
+      "summary": "Turn production traces and evaluations into tested agent and model improvements.",
+      "problem": "Teams need a learning loop that links real failures to evaluated changes without unsafe deployments.",
+      "how": "Foundry groups production signals, proposes changes and compares them against team-defined quality, safety, latency and cost evaluations.",
+      "benefit": "Improve agents and models against a measured baseline before choosing what to deploy.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": true,
+      "demo": "foundry-loop",
+      "features": [
+        {"name": "Multi-turn evaluation", "availability": "Generally available"},
+        {"name": "Production insights", "availability": "Generally available"},
+        {"name": "Agent optimizer", "availability": "Generally available"},
+        {"name": "Human annotation", "availability": "Public preview"},
+        {"name": "Managed Training", "availability": "Public preview"},
+        {"name": "Programmed Training", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "decision-1-1",
+      "sectionId": "foundry",
+      "subsection": "New models",
+      "name": "Microsoft-Decision-1.1",
+      "summary": "A fast decision model for routing, classification and workflow control.",
+      "problem": "Software decisions are often hard-coded or sent to larger general-purpose models.",
+      "how": "Decision-1.1 chooses among permitted actions, adds calibrated confidence and supports image inputs.",
+      "benefit": "Make structured decisions quickly at competitive cost and defer when uncertainty is high.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/decision-model-ga",
+      "hero": true,
+      "demo": "decision",
+      "features": [
+        {"name": "Structured routing and classification", "availability": "Generally available"},
+        {"name": "Calibrated confidence scores", "availability": "Generally available"},
+        {"name": "Multimodal image instructions", "availability": "Generally available"},
+        {"name": "Foundry, OpenRouter and Vercel availability", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "foundry-models",
+      "sectionId": "foundry",
+      "subsection": "New models",
+      "name": "New coding, image and cyber models",
+      "summary": "Match specialized first-party and partner models to coding, creation, decisions and security.",
+      "problem": "One model does not fit every agent workload, cost target or security requirement.",
+      "how": "Foundry adds coding, image, cyber, decision and routing models along with video and open-model providers.",
+      "benefit": "Choose across more than 11,000 models and evaluate, train and deploy in one workflow.",
+      "availability": ["Generally available", "Public preview", "Private preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/foundrymodelsignite2026",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "MAI-Code-2 and MAI-Code-2-Flash", "availability": "Generally available in GitHub"},
+        {"name": "MAI-Code-2-Flash in Foundry", "availability": "Private preview"},
+        {"name": "MAI-Image-2.7 and Flash", "availability": "Public preview"},
+        {"name": "MAI-Cyber-2-Flash", "availability": "Public preview"},
+        {"name": "Foundry model router expansion", "availability": "Generally available"},
+        {"name": "Video and Baseten model providers", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "copilot-sdk",
+      "sectionId": "github",
+      "subsection": "GitHub",
+      "name": "Microsoft Copilot SDK 2.0",
+      "summary": "Use a production proven Copilot harness in secure, scalable applications.",
+      "problem": "Teams need consistent agent security and runtime behavior inside applications and multi-tenant products.",
+      "how": "The SDK wraps a native Rust runtime and the same harness technology used across Microsoft and GitHub.",
+      "benefit": "Build on six supported programming languages with a production-oriented harness.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/copilot-sdk/blog-2.0",
+      "hero": true,
+      "demo": "sdk",
+      "features": [
+        {"name": "Native Rust runtime", "availability": "Generally available"},
+        {"name": "Six programming language support", "availability": "Generally available"},
+        {"name": "Enterprise scale and security", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "agent-365-finops",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Agent 365 FinOps for AI",
+      "summary": "Understand, control and optimize AI investment across services and agents.",
+      "problem": "AI spending is moving across teams and leaders need to connect cost with business value.",
+      "how": "Cost Management brings centralized spend data and policies. Business Analytics measures outcomes and forecasts scenarios.",
+      "benefit": "Turn agent spending from a control problem into a governed investment decision.",
+      "availability": ["Public preview", "Frontier"],
+      "availabilityKind": ["preview", "frontier"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/ai-finops-blog/introducing-microsoft-agent-365-business-analytics-turn-ai-investment-into-busin/4574149",
+      "hero": true,
+      "demo": "finops",
+      "features": [
+        {"name": "Agent 365 Cost Management", "availability": "Public preview"},
+        {"name": "Spend and forecast policies", "availability": "Frontier"},
+        {"name": "Business Analytics", "availability": "Frontier"}
+      ]
+    },
+    {
+      "id": "copilot-autopilot",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Autopilot",
+      "summary": "An enterprise-grade, long-running personal productivity agent.",
+      "problem": "Complex personal workflows continue across threads and sessions without a persistent delegate.",
+      "how": "Autopilot runs in the tenant with its own identity, memory and tools and can be mentioned in Teams.",
+      "benefit": "Follow up on threads, recurring work and projects while keeping actions visible and governable.",
+      "availability": ["Frontier"],
+      "availabilityKind": ["frontier"],
+      "officialLink": "https://aka.ms/MicrosoftIgnite26Blog",
+      "hero": true,
+      "demo": "autopilot",
+      "features": [
+        {"name": "Persistent tenant identity and memory", "availability": "Frontier"},
+        {"name": "Recurring and long-running work", "availability": "Frontier"},
+        {"name": "Teams mentions", "availability": "Frontier"},
+        {"name": "Admin visibility and management", "availability": "Frontier"}
+      ]
+    },
+    {
+      "id": "copilot-runtime",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Copilot Managed Runtime",
+      "summary": "A common managed hosting and governance layer for applications built across Copilot experiences.",
+      "problem": "Apps need consistent hosting, identity, data and management after creation.",
+      "how": "The runtime hosts applications and can use Fabric for an optional database, storage and data API backend.",
+      "benefit": "Publish across Microsoft Copilot and compatible tools with one enterprise management path.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/CopilotManagedRuntime-Ignite-Blog",
+      "hero": true,
+      "demo": "runtime",
+      "features": [
+        {"name": "Managed application hosting", "availability": "Generally available"},
+        {"name": "Fabric data backend", "availability": "Generally available"},
+        {"name": "Agents and workflows publishing", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "copilot-workspaces",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Copilot Workspaces",
+      "summary": "Turn shared context into shared progress around an ongoing workstream.",
+      "problem": "Teams need to catch up on shared documents and unresolved work without reconstructing context.",
+      "how": "Workspaces connect team context with Copilot summaries of changes, unresolved questions and next actions.",
+      "benefit": "Move people from catching up to directing the work together.",
+      "availability": ["Frontier"],
+      "availabilityKind": ["frontier"],
+      "officialLink": "https://aka.ms/MicrosoftIgnite26Blog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Shared work and documents", "availability": "Frontier"},
+        {"name": "Work IQ workspace suggestions", "availability": "Frontier"},
+        {"name": "Personal Autopilot integration", "availability": "Coming soon"}
+      ]
+    },
+    {
+      "id": "dynamics-copilot-plugins",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Dynamics 365 CRM and ERP plugins",
+      "summary": "Complete sales, finance and operations tasks from Copilot.",
+      "problem": "Business users need CRM and ERP context without repeated app switching.",
+      "how": "Sales and ERP plugins expose purpose-built skills and context to Copilot Cowork and Excel.",
+      "benefit": "Prepare meetings, manage deals and streamline source-to-pay tasks in the work experience.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/A365AnalyticsLearn",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Dynamics 365 Sales plugin", "availability": "Generally available"},
+        {"name": "Dynamics 365 ERP apps plugin", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "copilot-code",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Copilot Code",
+      "summary": "Let people build secure dashboards, trackers and apps with natural language.",
+      "problem": "Nontraditional developers need a fast app-building path with tenant and local safeguards.",
+      "how": "Copilot Code uses agentic technology and cloud or local sandboxes with publishing through Managed Runtime.",
+      "benefit": "Build and share apps with tenant identity and existing Microsoft 365 controls.",
+      "availability": ["Frontier", "Generally available in December", "Coming soon on macOS"],
+      "availabilityKind": ["frontier", "ga", "coming"],
+      "officialLink": "https://aka.ms/MicrosoftIgnite26Blog",
+      "hero": true,
+      "demo": "copilot-code",
+      "features": [
+        {"name": "Copilot Code on Windows, web, iOS and Android", "availability": "Frontier"},
+        {"name": "Local sandbox on Windows", "availability": "Frontier"},
+        {"name": "Local sandbox on macOS", "availability": "Coming soon"},
+        {"name": "General availability", "availability": "December"}
+      ]
+    },
+    {
+      "id": "copilot-home",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Home in the Microsoft Copilot app",
+      "summary": "A starting point that unifies Chat, Cowork and Office collaboration.",
+      "problem": "Users need to move naturally between quick questions and complex delegated work.",
+      "how": "Home uses Auto to recommend effort, route to Cowork and carry context into Office experiences.",
+      "benefit": "Keep context, documents and collaboration in one flow.",
+      "availability": ["Generally available", "Frontier", "Private preview"],
+      "availabilityKind": ["ga", "frontier", "preview"],
+      "officialLink": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "hero": true,
+      "demo": "copilot-route",
+      "features": [
+        {"name": "Home with Chat and Cowork", "availability": "Generally available"},
+        {"name": "Auto Chat to Cowork recommendation", "availability": "Generally available"},
+        {"name": "Microsoft-Decision-1.1 in Cowork Auto", "availability": "Frontier"},
+        {"name": "Declarative agents in Cowork", "availability": "Private preview"},
+        {"name": "Office in Copilot", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "dynamics-activate",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Dynamics 365 Activate for agentic ERP migration",
+      "summary": "Extend CRM migration capabilities to SAP ECC and Dynamics 365 ERP.",
+      "problem": "Organizations need to assess customizations, dependencies and migration scope before implementation.",
+      "how": "Activate adds discovery, requirements analysis, configuration, data migration and shared project context.",
+      "benefit": "Carry context from assessment through migration with implementation teams validating recommendations.",
+      "availability": ["Rolling out"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/D365Ignite2026",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "SAP ECC discovery", "availability": "Rolling out"},
+        {"name": "Requirements analysis", "availability": "Rolling out"},
+        {"name": "Configuration and data migration", "availability": "Rolling out"},
+        {"name": "Salesforce migration experience", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "salesforce-copilot",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Salesforce across Copilot, Teams and Fabric",
+      "summary": "Bring Salesforce context and actions into Microsoft work experiences.",
+      "problem": "Sellers need customer context and business actions across Microsoft 365.",
+      "how": "Salesforce in Copilot uses authenticated MCP access. Teams adds Sales Cloud. Fabric adds a two-way Zero Copy connection.",
+      "benefit": "Keep Salesforce context in Copilot, Teams and analytics without copy-based data movement.",
+      "availability": ["Public preview", "Pilot", "Generally available"],
+      "availabilityKind": ["preview", "preview", "ga"],
+      "officialLink": "https://aka.ms/AA1457n5",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Salesforce in Copilot", "availability": "Public preview"},
+        {"name": "Sales Cloud in Teams", "availability": "Pilot"},
+        {"name": "Salesforce Data 360 and Fabric Zero Copy", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "today",
+      "sectionId": "copilot",
+      "subsection": "Microsoft Copilot",
+      "name": "Today",
+      "summary": "A prioritized morning and throughout-the-day view of work across Microsoft 365.",
+      "problem": "People need a clear view of priorities and prepared next steps across mail, calendar and chats.",
+      "how": "Today Brief creates a morning refresh. Today Feed builds on it throughout the day.",
+      "benefit": "Surface priorities and draft actions for human review and approval.",
+      "availability": ["Private preview", "Frontier"],
+      "availabilityKind": ["preview", "frontier"],
+      "officialLink": "https://aka.ms/MicrosoftIgnite26Blog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Today Brief", "availability": "Private preview"},
+        {"name": "Today Feed", "availability": "Private preview"}
+      ]
+    },
+    {
+      "id": "microsoft-iq",
+      "sectionId": "iq",
+      "subsection": "Microsoft IQ",
+      "name": "Microsoft IQ",
+      "summary": "A governed enterprise context platform that retains what organizations learn.",
+      "problem": "Agents need to reuse business context, skills and improvements instead of starting from scratch.",
+      "how": "Microsoft IQ combines enterprise context management with continuous improvement in Foundry.",
+      "benefit": "Preserve and grow organizational intelligence across apps and agents.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": true,
+      "demo": "iq-context",
+      "features": [
+        {"name": "Enterprise context management", "availability": "Generally available"},
+        {"name": "Foundry continuous improvement", "availability": "Generally available"},
+        {"name": "No new SKU or subscription", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "iq-context",
+      "sectionId": "iq",
+      "subsection": "Enterprise context management",
+      "name": "Enterprise context management",
+      "summary": "Connect agents to work, business data, unstructured content and real-world knowledge.",
+      "problem": "Each agent needs permission-aware context and reusable expertise.",
+      "how": "Work IQ, Fabric IQ, Foundry IQ and Web IQ combine with business plugins, skills, tools and agents.",
+      "benefit": "Give agents more relevant context and lower unnecessary token use.",
+      "availability": ["Generally available", "Frontier"],
+      "availabilityKind": ["ga", "frontier"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": true,
+      "demo": "iq-context",
+      "features": [
+        {"name": "Work IQ, Fabric IQ, Foundry IQ and Web IQ", "availability": "Generally available"},
+        {"name": "Business plugins", "availability": "Frontier"},
+        {"name": "Reusable skills, tools and agents", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "foundry-iq",
+      "sectionId": "iq",
+      "subsection": "Foundry IQ",
+      "name": "Foundry IQ",
+      "summary": "Bring keyword, vector, knowledge graph and agentic retrieval to applications.",
+      "problem": "Unstructured organizational content is difficult to search and trace across relationships.",
+      "how": "Foundry IQ combines semantic ranking with knowledge graphs and iterative retrieval.",
+      "benefit": "Ground applications and agents in cited organizational knowledge.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Knowledge graphs", "availability": "Public preview"},
+        {"name": "Microsoft-Retriever-1", "availability": "Public preview"},
+        {"name": "Foundry IQ resource in new projects", "availability": "Public preview"},
+        {"name": "SharePoint indexed knowledge source", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "fabric-iq",
+      "sectionId": "iq",
+      "subsection": "Fabric IQ",
+      "name": "Fabric IQ",
+      "summary": "Share trusted business meaning across Copilot, Fabric, Excel and third-party assistants.",
+      "problem": "Enterprise data needs consistent measures and operational rules before agents act on it.",
+      "how": "Fabric IQ combines OneLake, semantic models and ontologies in a shared intelligence layer.",
+      "benefit": "Give people and agents one governed understanding of the business.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Copilot and Fabric app integrations", "availability": "Generally available"},
+        {"name": "Excel Fabric IQ", "availability": "Public preview"},
+        {"name": "Fabric IQ ontologies in GitHub Copilot", "availability": "Public preview"},
+        {"name": "ChatGPT and Claude connectors", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "web-iq",
+      "sectionId": "iq",
+      "subsection": "Web IQ",
+      "name": "Web IQ",
+      "summary": "Bring fresh, real-world web knowledge into agents and applications.",
+      "problem": "Model context needs relevant external sources beyond business and unstructured data.",
+      "how": "Web IQ combines web, news, images, video, places, weather and commerce content with scopes and Auto modes.",
+      "benefit": "Ground external knowledge with source controls and lower retrieval complexity.",
+      "availability": ["Generally available", "Private preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/webiqnews",
+      "hero": true,
+      "demo": "webiq",
+      "features": [
+        {"name": "Web IQ Auto and Auto Advanced", "availability": "Generally available"},
+        {"name": "Web IQ Scopes", "availability": "Generally available"},
+        {"name": "Places and Weather", "availability": "Generally available"},
+        {"name": "Commerce", "availability": "Private preview"},
+        {"name": "Health-aware ranking", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "work-iq",
+      "sectionId": "iq",
+      "subsection": "Work IQ",
+      "name": "Work IQ",
+      "summary": "Add organizational context, actions and approval controls to Copilot and agents.",
+      "problem": "An agent needs richer work context without losing permission and human-control boundaries.",
+      "how": "Work IQ expands retrieval and memory, content actions, event listening and enterprise approval controls.",
+      "benefit": "Move from context-aware answers to governed action across work content.",
+      "availability": ["Generally available", "Public preview", "Coming soon"],
+      "availabilityKind": ["ga", "preview", "coming"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Richer permission-aware context", "availability": "Generally available"},
+        {"name": "Create and edit work content", "availability": "Generally available"},
+        {"name": "Event listening", "availability": "Public preview"},
+        {"name": "Human approval controls", "availability": "Public preview"},
+        {"name": "OpenAI and Anthropic integrations", "availability": "Coming soon"}
+      ]
+    },
+    {
+      "id": "iq-continuous",
+      "sectionId": "iq",
+      "subsection": "Continuous improvement",
+      "name": "Continuous improvement across Microsoft IQ",
+      "summary": "Carry production learning through agent configuration and model training.",
+      "problem": "Teams need one measured path from automated optimization to custom model training.",
+      "how": "Agent Optimizer and post-training capabilities use success criteria and production signals with human approval.",
+      "benefit": "What works becomes reusable context, skills and evaluations for future agents.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/miq-ignitelaunchblog",
+      "hero": false,
+      "demo": "foundry-loop",
+      "features": [
+        {"name": "Managed Training", "availability": "Generally available"},
+        {"name": "Programmed Training", "availability": "Public preview"},
+        {"name": "Reuse of successful context and evaluations", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "dynamic-agent-risk",
+      "sectionId": "security",
+      "subsection": "Agent 365",
+      "name": "Dynamic Agent Risk",
+      "summary": "Keep an updating risk view across an agent's identity, actions and environment.",
+      "problem": "Security teams need a unified view of agent risk instead of stitching siloed tools.",
+      "how": "Agent 365 combines runtime, posture and blast radius signals and partner evidence as agents change.",
+      "benefit": "Use low, medium or high risk to govern and mitigate agents over time.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/secureAIannounce",
+      "hero": true,
+      "demo": "security-risk",
+      "features": [
+        {"name": "Runtime and posture correlation", "availability": "Public preview"},
+        {"name": "Blast radius assessment", "availability": "Public preview"},
+        {"name": "Partner risk signals", "availability": "Public preview"},
+        {"name": "Cross-product Agent 365 visibility", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "agent365-insights",
+      "sectionId": "security",
+      "subsection": "Agent 365",
+      "name": "Agent 365 management insights",
+      "summary": "Expand usage and activity visibility across Microsoft agents.",
+      "problem": "Administrators need foundational agent inventory and usage data before adding governance.",
+      "how": "Microsoft agents receive management center and Viva Insights metrics regardless of Agent 365 licensing.",
+      "benefit": "Understand users, sessions, exception rate and runtime across an agent estate.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/agent-365-blog/whats-new-in-microsoft-agent-365-ignite-2026/4571753",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Agent overview and usage metrics", "availability": "Generally available"},
+        {"name": "Viva Insights agent metrics", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "agent365-governance",
+      "sectionId": "security",
+      "subsection": "Agent 365",
+      "name": "Agent 365 governance expansion",
+      "summary": "Surface inactive agents, classify work and govern plugins, skills and MCP tools.",
+      "problem": "Agent estates need lifecycle cleanup and centralized control over tools and models.",
+      "how": "The action center, Agent Map and Microsoft 365 admin controls bring attention and governance tasks into one place.",
+      "benefit": "Identify owners, consolidate agents and control tool availability with existing permissions.",
+      "availability": ["Generally available", "Public preview", "Private preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/agent-365-blog/whats-new-in-microsoft-agent-365-ignite-2026/4571753",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Action center", "availability": "Private preview in December"},
+        {"name": "Business use-case and task classification", "availability": "Public preview"},
+        {"name": "Plugins and skills governance", "availability": "Generally available"},
+        {"name": "MCP gateway governance", "availability": "Public preview"},
+        {"name": "Local and shadow agent governance", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "agent365-business",
+      "sectionId": "security",
+      "subsection": "Agent 365",
+      "name": "Agent 365 business value capabilities",
+      "summary": "Connect AI spend and outcomes across Microsoft and third-party agents.",
+      "problem": "IT, business and security leaders need a shared view of cost, outcomes and efficiency.",
+      "how": "Business Analytics expands reporting and adds recommendations for Microsoft and third-party agents.",
+      "benefit": "Maximize value and efficiency with shared financial and outcome context.",
+      "availability": ["Frontier"],
+      "availabilityKind": ["frontier"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/agent-365-blog/whats-new-in-microsoft-agent-365-ignite-2026/4571753",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Microsoft and third-party cost reporting", "availability": "Frontier"},
+        {"name": "Outcome and efficiency recommendations", "availability": "Frontier"}
+      ]
+    },
+    {
+      "id": "mdash",
+      "sectionId": "security",
+      "subsection": "Codename MDASH",
+      "name": "Codename MDASH",
+      "summary": "An agentic code security system that validates and reduces vulnerability findings.",
+      "problem": "Security teams need fewer false positives and evidence for large repository findings.",
+      "how": "More than 100 specialized agents map attack surfaces, debate findings, remove duplicates and reproduce where possible.",
+      "benefit": "Spend less time triaging low-quality findings and more time acting on validated evidence.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/perceptionignite",
+      "hero": true,
+      "demo": "mdash",
+      "features": [
+        {"name": "Repository sharding", "availability": "Public preview"},
+        {"name": "Progress visibility", "availability": "Public preview"},
+        {"name": "MAI Cyber model support", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "defender-isoc",
+      "sectionId": "security",
+      "subsection": "Defender",
+      "name": "Integrated Security Operations Center",
+      "summary": "Unify SIEM and threat protection for people and agents.",
+      "problem": "SOC tools need a shared foundation to investigate and respond across the cyber stack.",
+      "how": "Core ISOC capabilities combine SIEM and threat protection and add vulnerability shielding.",
+      "benefit": "Shield known vulnerable systems while teams apply permanent fixes.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/ignite-2026-whats-new-in-microsoft-defender--sentinel/4569975",
+      "hero": true,
+      "demo": "perception",
+      "features": [
+        {"name": "Core Integrated SOC capabilities", "availability": "Generally available"},
+        {"name": "SIEM breadth and Defender data retention", "availability": "Public preview"},
+        {"name": "Vulnerability shielding", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "defender-runtime",
+      "sectionId": "security",
+      "subsection": "Defender",
+      "name": "Runtime protection for local AI agents",
+      "summary": "Detect malicious instructions and protect network access for local agents on Windows.",
+      "problem": "Local agents process files and tools while attackers hide instructions in content.",
+      "how": "Defender scans agent calls. Network DLP, Entra and Purview extend data and access controls.",
+      "benefit": "Detect, audit or block risky agent activity with Defender or Intune policies.",
+      "availability": ["Generally available"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/ignite-2026-whats-new-in-microsoft-defender--sentinel/4569975",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Agent-native runtime protection", "availability": "Generally available"},
+        {"name": "Network-based runtime protection", "availability": "Generally available"}
+      ]
+    },
+    {
+      "id": "defender-threat-intel",
+      "sectionId": "security",
+      "subsection": "Defender",
+      "name": "Zero-day and emerging threat intelligence",
+      "summary": "Surface urgent threats and test available protections from one experience.",
+      "problem": "Threat information is scattered and increasingly urgent as attack speed increases.",
+      "how": "Defender adds tags, widgets, latest-threat views, email updates and Perception protection playbooks.",
+      "benefit": "Find, filter and act on the threats most relevant to an organization.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Zero-day and emerging threat tags", "availability": "Public preview"},
+        {"name": "Latest-threats views", "availability": "Public preview"},
+        {"name": "Email notifications", "availability": "Public preview"},
+        {"name": "Perception protection validation", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "onprem-security",
+      "sectionId": "security",
+      "subsection": "Defender",
+      "name": "On-premises security initiative",
+      "summary": "Reduce risk across supported Exchange, SharePoint and Skype for Business Server workloads.",
+      "problem": "Eligible workloads should move to Microsoft 365, while critical systems still need stronger on-premises protection.",
+      "how": "Microsoft combines guidance, migration support and baseline security mode for supported server workloads.",
+      "benefit": "Improve updates, safer configuration and temporary protection while permanent fixes are prepared.",
+      "availability": ["Available", "Rolling out"],
+      "availabilityKind": ["ga"],
+      "officialLink": "https://aka.ms/OnpremSecInitiativeBlog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Supported server security guidance", "availability": "Available"},
+        {"name": "On-Premises Baseline Security Mode", "availability": "Rolling out"},
+        {"name": "Faster updates and emergency mitigations", "availability": "Available"}
+      ]
+    },
+    {
+      "id": "entra-agentic",
+      "sectionId": "security",
+      "subsection": "Entra",
+      "name": "Microsoft Entra agentic identity and access",
+      "summary": "Discover agents and govern identity, conditional access and network policy at scale.",
+      "problem": "Agents need identities and least-privilege controls across local and cloud environments.",
+      "how": "Entra Agent ID, MCP access, Conditional Access planning and Global Secure Access apply identity-aware controls.",
+      "benefit": "Separate agent activity from humans and control local, cloud and MCP resource access.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/ignite/entra",
+      "hero": true,
+      "demo": "security-risk",
+      "features": [
+        {"name": "Agent ID for discovered local agents", "availability": "Public preview"},
+        {"name": "Agent ID for Microsoft cloud agents", "availability": "Public preview"},
+        {"name": "Microsoft MCP Server for Enterprise", "availability": "Generally available"},
+        {"name": "Conditional Access policy plans", "availability": "Public preview"},
+        {"name": "Global Secure Access MCP Firewall", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "perception",
+      "sectionId": "security",
+      "subsection": "Perception",
+      "name": "Microsoft Perception",
+      "summary": "Specialized agents and playbooks for red, blue and green security work.",
+      "problem": "Security teams need coordinated investigation and posture work across the organization.",
+      "how": "Red, blue and green agents perform specialized tasks while playbooks orchestrate broader workflows.",
+      "benefit": "Triage alerts, investigate attacks and reduce critical exposure with governed automation.",
+      "availability": ["Generally available", "Public preview", "Private preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/perceptionignite",
+      "hero": true,
+      "demo": "perception",
+      "features": [
+        {"name": "Triage, investigation and detection authoring agents", "availability": "Generally available"},
+        {"name": "Web application pen test agent", "availability": "Public preview"},
+        {"name": "Codename MDASH integration", "availability": "Generally available"},
+        {"name": "Risk prioritization and remediation playbooks", "availability": "Public preview"},
+        {"name": "Secure AI agents and playbooks", "availability": "Private preview"}
+      ]
+    },
+    {
+      "id": "purview",
+      "sectionId": "security",
+      "subsection": "Purview",
+      "name": "Microsoft Purview data security for Copilot and agents",
+      "summary": "Classify and protect sensitive data across Copilot, prompts and endpoint agents.",
+      "problem": "Sensitive information can flow through Copilot and agent tools without proper context.",
+      "how": "Purview adds classification, Copilot DLP, prompt and attachment protection and endpoint agent controls.",
+      "benefit": "Accelerate Copilot adoption while blocking unsafe references and agent data exposure.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/SecureData/Blog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "High precision automatic classification", "availability": "Public preview"},
+        {"name": "Copilot data loss prevention", "availability": "Public preview"},
+        {"name": "Endpoint agent data controls", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "entra-readiness",
+      "sectionId": "security",
+      "subsection": "Entra",
+      "name": "AI Readiness Initiatives",
+      "summary": "Track structured security foundations and exposure reduction with live tenant data.",
+      "problem": "Security teams need evidence that identity, endpoints, agents and data gaps are closing.",
+      "how": "Perception initiatives measure patching, authentication and agent governance progress with agents and human control.",
+      "benefit": "Coordinate work across security domains and verify that exposure is reduced.",
+      "availability": ["Public preview in January"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/exposurenewsignite",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Patching and vulnerability management", "availability": "Public preview in January"},
+        {"name": "Modernize authentication", "availability": "Public preview in January"},
+        {"name": "Agent discovery and governance", "availability": "Public preview in January"}
+      ]
+    },
+    {
+      "id": "intune-ai",
+      "sectionId": "security",
+      "subsection": "Intune",
+      "name": "Intune local AI agent governance",
+      "summary": "Discover local agents and apply compliance, identity and network boundaries.",
+      "problem": "Managed devices can run unapproved agents with access to company data.",
+      "how": "Intune discovers agents, marks devices noncompliant and uses containers and Global Secure Access for boundaries.",
+      "benefit": "Adopt AI agents while keeping endpoint, network and data controls visible.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-at-ignite/4570003",
+      "hero": false,
+      "demo": "windows-agent",
+      "features": [
+        {"name": "Agent discovery and device compliance", "availability": "Public preview"},
+        {"name": "Microsoft Execution Containers", "availability": "Public preview"},
+        {"name": "Global Secure Access network controls", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "edge-governance",
+      "sectionId": "edge",
+      "subsection": "Edge for Business",
+      "name": "Edge for Business governed AI and security",
+      "summary": "Turn workflows into reusable Copilot skills and govern agent browsing.",
+      "problem": "Browser agents and extensions need enterprise identity, permissions and security context.",
+      "how": "Edge adds skills recorder, dedicated managed agent windows, extension risk controls and Sentinel or Entra integrations.",
+      "benefit": "Let users and agents work faster with predictable steps and organization-wide safeguards.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/EdgeIgnite26",
+      "hero": true,
+      "demo": "edge-agent",
+      "features": [
+        {"name": "Skills recorder", "availability": "Public preview"},
+        {"name": "Managed agent browsing", "availability": "Public preview"},
+        {"name": "Extension safety inventory", "availability": "Generally available"},
+        {"name": "Extension leak control", "availability": "Public preview"},
+        {"name": "Microsoft Sentinel connector", "availability": "Public preview"},
+        {"name": "Entra Global Secure Access", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "windows-copilot",
+      "sectionId": "windows",
+      "subsection": "Windows",
+      "name": "Copilot on Windows",
+      "summary": "Use on-device context for file management, PC diagnostics and Windows Search.",
+      "problem": "People need natural-language help for local files and troubleshooting.",
+      "how": "Copilot reads Windows diagnostic context and helps find, organize or move files and diagnose issues.",
+      "benefit": "Get clearer explanations and supported next steps from the Windows experience.",
+      "availability": ["Public preview"],
+      "availabilityKind": ["preview"],
+      "officialLink": "https://aka.ms/WindowsAtIgnite2026",
+      "hero": false,
+      "demo": "windows-agent",
+      "features": [
+        {"name": "Local file management", "availability": "Public preview"},
+        {"name": "Local PC diagnostics", "availability": "Public preview"},
+        {"name": "Copilot in Windows Search", "availability": "Public preview"}
+      ]
+    },
+    {
+      "id": "windows-365",
+      "sectionId": "windows",
+      "subsection": "Windows",
+      "name": "Windows 365 Cloud PC enhancements",
+      "summary": "Improve connectivity, administration and redirection controls for Cloud PCs.",
+      "problem": "Organizations need resilient Cloud PC sessions and simpler troubleshooting at scale.",
+      "how": "Windows 365 adds Direct Stream enhancements, Intune admin assistant, MAM and context-based redirections.",
+      "benefit": "Improve multimedia experiences and manage trust-aware redirections.",
+      "availability": ["Generally available", "Public preview", "Coming soon"],
+      "availabilityKind": ["ga", "preview", "coming"],
+      "officialLink": "https://aka.ms/W365Ignite26Blog",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Direct Stream enhancements", "availability": "Generally available"},
+        {"name": "Windows 365 admin assistant", "availability": "Public preview"},
+        {"name": "Windows Mobile Application Management", "availability": "Public preview"},
+        {"name": "Context-based redirections", "availability": "Generally available"},
+        {"name": "GPU Direct Stream enhancement", "availability": "Preview early next year"}
+      ]
+    },
+    {
+      "id": "windows-management",
+      "sectionId": "windows",
+      "subsection": "Windows",
+      "name": "Windows and Intune management capabilities",
+      "summary": "Move AI into daily work with stronger device security and automatic management.",
+      "problem": "Teams need Windows and Intune controls that cover devices, servers and new experiences.",
+      "how": "Windows baseline protection, Endpoint Security Platform and declarative management extend baseline controls.",
+      "benefit": "Keep devices and applications protected while IT evaluates and introduces experiences.",
+      "availability": ["Generally available", "Public preview", "Private preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/WindowsAtIgnite2026",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Windows baseline protection", "availability": "Private preview"},
+        {"name": "Windows Endpoint Security Platform", "availability": "Generally available"},
+        {"name": "Windows Server 2028 management", "availability": "Private preview"},
+        {"name": "Declarative device management", "availability": "Public preview"},
+        {"name": "Experience and OS reliability controls", "availability": "Private preview"}
+      ]
+    },
+    {
+      "id": "windows-365-agents",
+      "sectionId": "windows",
+      "subsection": "Windows",
+      "name": "Windows 365 for Agents",
+      "summary": "Run enterprise-ready agents in governed Cloud PCs at scale.",
+      "problem": "Computer-using agents need reliable workspaces and access to legacy applications without APIs.",
+      "how": "Windows 365 for Agents integrates Copilot Studio and Foundry and introduces persistent Cloud PCs.",
+      "benefit": "Unify AI billing and governance across personal and business-process agents.",
+      "availability": ["Public preview", "Frontier", "Coming soon"],
+      "availabilityKind": ["preview", "frontier", "coming"],
+      "officialLink": "https://aka.ms/W365Ignite26Blog",
+      "hero": true,
+      "demo": "windows-agent",
+      "features": [
+        {"name": "Copilot Credits eligibility", "availability": "Available"},
+        {"name": "Copilot Studio computer-use tool", "availability": "Available"},
+        {"name": "Foundry MCP support", "availability": "Preview early next year"},
+        {"name": "On-premises access with agent identities", "availability": "Public preview"},
+        {"name": "Persistent Cloud PCs", "availability": "Frontier preview"}
+      ]
+    },
+    {
+      "id": "windows-hybrid",
+      "sectionId": "windows",
+      "subsection": "Windows",
+      "name": "Windows local and hybrid AI capabilities",
+      "summary": "Place models across PCs, Cloud PCs and server-managed environments.",
+      "problem": "AI workloads need different execution paths for cost, performance and governance.",
+      "how": "Windows supports Foundry Local on Cloud PCs and private multi-user server development environments.",
+      "benefit": "Choose a local or managed environment for compatible AI workloads.",
+      "availability": ["Generally available", "Private preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/WindowsAtIgnite2026",
+      "hero": false,
+      "demo": null,
+      "features": [
+        {"name": "Foundry Local on Cloud PCs", "availability": "Generally available"},
+        {"name": "Windows Server 2025 with AVD Hybrid", "availability": "Private preview"}
+      ]
+    },
+    {
+      "id": "windows-process-containers",
+      "sectionId": "windows",
+      "subsection": "Windows",
+      "name": "Windows process containers for AI agents",
+      "summary": "Add protected workspaces, network policy and identity proofing for running agents.",
+      "problem": "Agents can reach the wrong resource, impersonate a service or affect the rest of a device.",
+      "how": "Process containers provide COM, IPC and network boundaries with learning and permissive enforcement modes.",
+      "benefit": "Observe legitimate behavior before gradually enforcing a protected agent workspace.",
+      "availability": ["Generally available", "Public preview"],
+      "availabilityKind": ["ga", "preview"],
+      "officialLink": "https://aka.ms/WindowsAtIgnite2026",
+      "hero": true,
+      "demo": "windows-agent",
+      "features": [
+        {"name": "Protected process workspaces", "availability": "Public preview"},
+        {"name": "COM and IPC governance", "availability": "Public preview"},
+        {"name": "Granular network policies", "availability": "Public preview"},
+        {"name": "Learning and permissive mode", "availability": "Generally available"}
+      ]
+    }
+  ]
+}

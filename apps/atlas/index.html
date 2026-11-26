@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Event Atlas: interactive experiences, source-linked stories, demos, games, and living archives from major technology events."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>Event Atlas</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Event Atlas home">
+        <span class="brand-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i>
+        </span>
+        <span>Event Atlas</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#events">Events</a>
+        <a href="#principles">Principles</a>
+        <a href="https://github.com/Ricky-G/event-atlas">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-orbit" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="orbit-core">EA</span>
+        </div>
+        <p class="eyebrow">A living collection of technology event experiences</p>
+        <h1 id="hero-title">Explore the moment.<br /><em>Replay the ideas.</em></h1>
+        <p class="hero-copy">
+          Keynotes, announcements, runnable demos, games, and source-linked stories—organized by event and preserved for what comes next.
+        </p>
+        <a class="primary-action" href="#events">
+          <span>Explore the atlas</span>
+          <i aria-hidden="true">↘</i>
+        </a>
+      </section>
+
+      <section class="events-section" id="events" aria-labelledby="events-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Annual editions</p>
+            <h2 id="events-title">Events on the map</h2>
+          </div>
+          <p>Each experience is independently runnable and permanently linked to its event year.</p>
+        </div>
+        <div class="event-grid" id="event-grid" aria-live="polite">
+          <p class="loading">Loading event catalog…</p>
+        </div>
+      </section>
+
+      <section class="principles-section" id="principles" aria-labelledby="principles-title">
+        <p class="eyebrow">Built to remain useful</p>
+        <h2 id="principles-title">Signals, not noise</h2>
+        <div class="principle-grid">
+          <article>
+            <span>01</span>
+            <h3>Source linked</h3>
+            <p>Factual announcements point back to official event material and supporting evidence.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Clearly labeled</h3>
+            <p>Facts, analysis, predictions, and illustrative demonstrations remain visually distinct.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Independently runnable</h3>
+            <p>Every annual folder can evolve without rewriting the rest of the event collection.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Event Atlas is an independent, unofficial community project.</p>
+      <div>
+        <a href="https://github.com/Ricky-G/event-atlas">Source</a>
+        <a href="https://clouddev.blog/">clouddev.blog</a>
+      </div>
+    </footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

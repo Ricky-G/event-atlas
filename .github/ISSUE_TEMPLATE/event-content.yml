@@ -1,0 +1,50 @@
+name: Event content
+description: Propose a new event, source correction, experience, game, or demo
+title: "[Event]: "
+labels:
+  - content
+body:
+  - type: input
+    id: event
+    attributes:
+      label: Event and year
+      description: For example, Microsoft Ignite 2026
+      placeholder: Event 2026
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Change type
+      options:
+        - New event experience
+        - Source or factual correction
+        - Game or challenge
+        - Runnable demo
+        - Shared infrastructure
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Explain the intended outcome and where it belongs in the event folder.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Add official or clearly identified source URLs. Write N/A for non-factual changes.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Publication checks
+      options:
+        - label: I have not included secrets, private data, or unreleased material.
+          required: true
+        - label: I will identify illustrative, generated, or predictive material clearly.
+          required: true
